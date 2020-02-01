@@ -22,6 +22,8 @@ proposition = ['y', 'b', 'g', 'r', 'w']
 
 ################## Check result
 if code == proposition:
+    print("%s = %s" % (proposition, code))
+    print("#################################")
     print("You wiiiiin !")
 else:
     result = []
@@ -45,5 +47,5 @@ else:
                 result.insert(check, '+')
         check -= 1
 
-print("%s || %s" % (proposition, result))
+    print("%s || %s" % (proposition, result))
 # Graph
