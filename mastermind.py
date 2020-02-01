@@ -1,7 +1,6 @@
 # MASTERMIND
 # Règles : 12 chances, 5 billes, 8 couleurs
 # JOueur VS machine --> DONE
-# TODO --> Player is machine
 
 import random
 
@@ -9,12 +8,7 @@ import random
 couleurs = ['y', 'b', 'g', 'r', 'w', 'p', 'i', 'o']
 tour = 12
 
-humain = True
 partie = True
-
-#player = str(input("Qui décode, une machine ou un humain ? machine/humain : "))
-#if player != "humain":
-#    humain = False
 
 ################## Creation du code
 # Random si codeur is machine
@@ -26,18 +20,15 @@ while len(code) < 5:
     i += 1
 
 while partie:
-    ################ Proposition du joueur / machine
+    ################ Proposition du joueur
     print("#############################################")
     proposition = []
-    # Joueur est un humain
-    if humain:
-        print("y = yellow ; b = blue ; g = green ; r = red ; w = white ; p = purple ; i = invisible ; o = orange")
-        x = 0
-        while len(proposition) < 5:
-            sample = str(input("Choisie une couleur : "))
-            proposition.insert(x, sample)
-            x += 1
-    # Joueur est une machine
+    print("y = yellow ; b = blue ; g = green ; r = red ; w = white ; p = purple ; i = invisible ; o = orange")
+    x = 0
+    while len(proposition) < 5:
+        sample = str(input("Choisie une couleur : "))
+        proposition.insert(x, sample)
+        x += 1
 
 
     ################## Check result
