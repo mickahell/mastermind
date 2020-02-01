@@ -10,7 +10,7 @@ tour = 12
 
 partie = True
 
-################## Creation du code
+################# Creation du code
 # Random si codeur is machine
 code = []
 i = 0
@@ -20,7 +20,7 @@ while len(code) < 5:
     i += 1
 
 while partie:
-    ################ Proposition du joueur
+    ############### Proposition du joueur
     print("#############################################")
     proposition = []
     print("y = yellow ; b = blue ; g = green ; r = red ; w = white ; p = purple ; i = invisible ; o = orange")
