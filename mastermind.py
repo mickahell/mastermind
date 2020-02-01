@@ -11,8 +11,8 @@ humain = 1
 partie = 1
 
 #player = str(input("Qui décode, une machine ou un humain ? machine/humain : "))
-#if player == "humain":
-#    humain = 1
+#if player != "humain":
+#    machine = 1
 
 ################## Creation du code
 # Random si codeur is machine
